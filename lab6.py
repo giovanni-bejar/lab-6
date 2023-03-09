@@ -24,13 +24,17 @@ def main():
         else:
             print("Invalid choice. Please try again.")
 
-def encode(password): #Giovanni Bejar
+def encode(password): # Giovanni Bejar
     encoded_password = ""
     for digit in password:
         encoded_password += str((int(digit) + 3) % 10)
     return encoded_password
 
-def decode(encoded_password):
+def decode(encoded_password): # Daniel Sixto
+    decoded_password = ""
+    for digit in encoded_password:
+        decoded_password += str((int(digit) - 3) % 10)
+    return decoded_password
 
 
 if __name__ == "__main__":
