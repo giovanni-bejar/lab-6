@@ -1,3 +1,6 @@
+# Lab 6: Version Control
+# Giovanni Bejar and Daniel Sixto
+
 def main():
     while True:
         print("\nChoose an option:")
